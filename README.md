@@ -15,7 +15,7 @@ Output style **zostaje włączony na stałe**, między sesjami, i przełączasz 
 | Plik | Co to jest | Dla kogo |
 |---|---|---|
 | `i-have-adhd.md` | Czysty port 10 zasad z oryginalnego repo, po angielsku. Same reguły formatu odpowiedzi, bez osobowości. | Chcesz dokładnie to, co w oryginale, ale jako output style |
-| `robert-adhd.md` | Mój miks: te same 10 zasad **plus** mój styl pracy - partner, który myśli razem ze mną, tłumaczy analogiami, kwestionuje założenia i mówi wprost, gdy biorę na siebie za dużo. Po polsku. | Chcesz gotowca z charakterem i pracujesz po polsku |
+| `robert-adhd.md` | Mój miks: te same 10 zasad **plus** styl pracy, którego używam na co dzień - partner, który myśli razem z Tobą, tłumaczy analogiami, kwestionuje założenia i mówi wprost, gdy bierzesz na siebie za dużo albo budujesz od zera coś, co już istnieje. Po polsku. | Chcesz gotowca z charakterem i pracujesz po polsku |
 
 **Uwaga techniczna do `robert-adhd.md`:** ma we frontmatterze `keep-coding-instructions: false`, czyli **zastępuje** domyślne instrukcje kodowania Claude Code swoimi. To celowe - taki był mój wcześniejszy styl. Jeśli wolisz, żeby domyślne zachowanie zostało nietknięte, a doszły tylko reguły formatu - usuń tę linijkę albo weź `i-have-adhd.md`.
 
