@@ -8,7 +8,7 @@ Powstały na potrzeby odcinka na moim kanale YouTube o skillach i pluginach do C
 
 Oryginał ([`ayghri/i-have-adhd`](https://github.com/ayghri/i-have-adhd)) to skill spakowany w plugin. Działa świetnie, ale ma jedną cechę, o której warto wiedzieć: komendę `/i-have-adhd` odpalasz **na bieżącą sesję**. Nowa sesja - odpalasz od nowa (autor przewidział na to plik-flagę `~/.claude/.i-have-adhd-always`).
 
-Output style **zostaje włączony na stałe**, między sesjami, i przełączasz go wbudowaną komendą `/output-style`. Dlatego przełożyłem te zasady na output style i przy okazji wymieszałem z własnym stylem pracy.
+Output style **zostaje włączony na stałe**, między sesjami, i przełączasz go w ustawieniach Claude Code. Dlatego przełożyłem te zasady na output style i przy okazji wymieszałem z własnym stylem pracy.
 
 ## Co jest w środku
 
@@ -29,13 +29,19 @@ curl -o ~/.claude/output-styles/robert-adhd.md \
   https://raw.githubusercontent.com/Szewowsky/robert-adhd-output-style/main/robert-adhd.md
 ```
 
-Potem w Claude Code:
+Potem w Claude Code wpisz:
 
 ```
-/output-style robert-adhd
+/settings
 ```
 
-I tyle. Styl zostaje włączony, dopóki go nie przełączysz z powrotem (`/output-style default`).
+i w sekcji **"Preferred output style"** wybierz `robert-adhd`. W terminalu ten sam ekran otwiera `/config`.
+
+I tyle. Styl zostaje włączony, dopóki nie wrócisz w to samo miejsce i nie wybierzesz `Default`.
+
+Jedna rzecz, która potrafi zmylić: świeżo skopiowany plik pojawia się na liście dopiero **w nowej sesji**. Jeśli go nie widzisz - zacznij nową rozmowę i sprawdź jeszcze raz.
+
+> Starsze wersje Claude Code miały osobną komendę `/output-style`. Została usunięta - jeśli masz ją u siebie, działa tak samo, ale docelowo idź przez `/settings`.
 
 Katalog `~/.claude/output-styles/` działa globalnie, we wszystkich projektach. Jeśli chcesz styl tylko w jednym projekcie, wrzuć plik do `.claude/output-styles/` w tym projekcie.
 
