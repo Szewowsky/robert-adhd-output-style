@@ -1,6 +1,6 @@
 # robert-adhd - output style do Claude Code
 
-Dwa gotowe **output style'e** do Claude Code, które sprawiają, że agent przestaje gadać, a zaczyna dowozić: akcja w pierwszej linii, kroki numerowane, listy maksymalnie po 5 pozycji, zero "Świetnie!" na początku i "Daj znać, gdyby coś" na końcu.
+Trzy gotowe **output style'e** do Claude Code, które sprawiają, że agent przestaje gadać, a zaczyna dowozić: akcja w pierwszej linii, kroki numerowane, listy maksymalnie po 5 pozycji, zero "Świetnie!" na początku i "Daj znać, gdyby coś" na końcu.
 
 Powstały na potrzeby odcinka na moim kanale YouTube o skillach i pluginach do Claude Code.
 
@@ -16,12 +16,13 @@ Output style **zostaje włączony na stałe**, między sesjami, i przełączasz 
 |---|---|---|
 | `i-have-adhd.md` | Czysty port 10 zasad z oryginalnego repo, po angielsku. Same reguły formatu odpowiedzi, bez osobowości. | Chcesz dokładnie to, co w oryginale, ale jako output style |
 | `robert-adhd.md` | Mój miks: te same 10 zasad **plus** styl pracy, którego używam na co dzień - partner, który myśli razem z Tobą, tłumaczy analogiami, kwestionuje założenia i mówi wprost, gdy bierzesz na siebie za dużo albo budujesz od zera coś, co już istnieje. Po polsku. | Chcesz gotowca z charakterem i pracujesz po polsku |
+| `na-temat-nauka.md` | Krótko i od konkretu, ale przy nieoczywistych krokach dorzuca jedno zdanie "dlaczego" i tłumaczy nowe pojęcia przy pierwszym użyciu (1-3 zdania nauki na odpowiedź). Zostawia domyślne instrukcje kodowania. Po polsku. | Chcesz działać szybko, ale rozumieć, co i po co robisz - nie klepać na ślepo |
 
 **Uwaga techniczna do `robert-adhd.md`:** ma we frontmatterze `keep-coding-instructions: false`, czyli **zastępuje** domyślne instrukcje kodowania Claude Code swoimi. To celowe - taki był mój wcześniejszy styl. Jeśli wolisz, żeby domyślne zachowanie zostało nietknięte, a doszły tylko reguły formatu - usuń tę linijkę albo weź `i-have-adhd.md`.
 
 ## Instalacja
 
-Skopiuj wybrany plik (albo oba) do katalogu output style'ów:
+Skopiuj wybrany plik (albo kilka) do katalogu output style'ów:
 
 ```bash
 mkdir -p ~/.claude/output-styles
@@ -47,7 +48,7 @@ Katalog `~/.claude/output-styles/` działa globalnie, we wszystkich projektach. 
 
 ## Zrób własny
 
-Oba pliki to zwykły markdown z krótkim frontmatterem (`name`, `description`) - potraktuj je jak punkt startowy, nie świętość. Dopisz swoje zasady, wytnij te, które Ci nie pasują, zmień język. Cała robota to jeden plik tekstowy.
+Każdy plik to zwykły markdown z krótkim frontmatterem (`name`, `description`) - potraktuj je jak punkt startowy, nie świętość. Dopisz swoje zasady, wytnij te, które Ci nie pasują, zmień język. Cała robota to jeden plik tekstowy.
 
 ## Licencja i podziękowania
 
